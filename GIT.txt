@@ -1,5 +1,7 @@
+测试连通性
+ssh -T git@github.com
 本地项目与远程项目关联
-git remote oragin git@github.com:cwy29/cwySSM.git
+git remote add oraigin git@github.com:cwy29/cwySSM.git
 
 第一次发布项目（本地-远程）
 
@@ -8,3 +10,12 @@ git commit -m "注释的内容"       //暂存区-本地分支
 git push -u origin master       //本地分支-远程分支
 
 第一次下载项目（远程-本地）
+git clone git@github.com:cwy29/cwySSM.git
+
+提交（本地-远程）
+
+git add .                         //文件-暂存区
+git commit -m "注释的内容"       //暂存区-本地分支
+git push origin master       //本地分支-远程分支
+
+更新（远程-本地）
